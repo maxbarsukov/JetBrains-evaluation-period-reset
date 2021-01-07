@@ -17,6 +17,7 @@ Windows:
 idea-reset-lin.bat
 ```
 
+After that, you should launch the application, confirm the JETBRAINS USER AGREEMENT, if necessary, select **Evaluate for free** and click **Evaluate**. Enjoy!
 ## Note
 
 As you can see, all files have a similar structure, so you can safely modify them for other JetBrains products by changing few words and it will probably work!
