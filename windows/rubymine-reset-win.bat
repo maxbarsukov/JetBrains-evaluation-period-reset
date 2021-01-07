@@ -44,10 +44,10 @@ for /d %%d in (%package%\RubyMine*) do (
 	)
 )
 
-reg query "HKCU\Software\RubySoft\Prefs\jetbrains" 2> nul
+reg query "HKCU\Software\JavaSoft\Prefs\jetbrains" 2> nul
 IF %ERRORLEVEL% EQU 1 goto finish
-ECHO Removing "HKCU\Software\RubySoft\Prefs\jetbrains" from registry
-reg delete "HKCU\Software\RubySoft\Prefs\jetbrains" /f
+ECHO Removing "HKCU\Software\JavaSoft\Prefs\jetbrains" from registry
+reg delete "HKCU\Software\JavaSoft\Prefs\jetbrains" /f
 :finish
 ECHO.
 ECHO Now try to run RubyMine

@@ -44,10 +44,10 @@ for /d %%d in (%package%\PhpStorm*) do (
 	)
 )
 
-reg query "HKCU\Software\PhpSoft\Prefs\jetbrains" 2> nul
+reg query "HKCU\Software\JavaSoft\Prefs\jetbrains" 2> nul
 IF %ERRORLEVEL% EQU 1 goto finish
-ECHO Removing "HKCU\Software\PhpSoft\Prefs\jetbrains" from registry
-reg delete "HKCU\Software\PhpSoft\Prefs\jetbrains" /f
+ECHO Removing "HKCU\Software\JavaSoft\Prefs\jetbrains" from registry
+reg delete "HKCU\Software\JavaSoft\Prefs\jetbrains" /f
 :finish
 ECHO.
 ECHO Now try to run PhpStorm
